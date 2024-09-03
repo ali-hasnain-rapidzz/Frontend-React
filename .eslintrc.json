@@ -12,6 +12,7 @@
 
   "rules": {
     "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-require-imports": "off",
 
     "import/no-unresolved": "off",
     "import/named": "off",
@@ -48,7 +49,7 @@
               {
                 "case": "snake",
                 "target": "**/pages/**",
-                "patterns": "^.*\\.(page|context)\\.tsx$"
+                "patterns": "^.*\\.(page|context|provider)\\.tsx$"
               },
               {
                 "case": "snake",
