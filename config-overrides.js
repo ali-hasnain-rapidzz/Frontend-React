@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-/* eslint-disable @typescript-eslint/no-require-imports */
+
 const path = require("path");
 const { override, addWebpackAlias } = require("customize-cra");
 
@@ -14,5 +14,6 @@ module.exports = override(
     "@Common": path.resolve(__dirname, "src/common"),
     "@Routes": path.resolve(__dirname, "src/routes"),
     "@Validations": path.resolve(__dirname, "src/validations"),
+    "@Context": path.resolve(__dirname, "src/context"),
   }),
 );

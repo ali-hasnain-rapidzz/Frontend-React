@@ -2,7 +2,7 @@ import { HomeContext } from "@Pages/Home/home.context";
 import React, { useContext } from "react";
 
 const Home: React.FC = () => {
-  const { content } = useContext(HomeContext) || { content: "" };
+  const { content } = useContext(HomeContext)!;
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
